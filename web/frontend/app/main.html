@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <h1><center>Web log project result display</center></h1>
+    </div>
+</nav>
+<div class="container-fluid" id="wrapper">
+    <div class="btn-group">
+        <button type="button" id="about" class="btn btn-default" ng-click="vm.getAbout()">about</button>
+        <button type="button" id="black" class="btn btn-danger" ng-click="vm.getBlack()">black-ip-list</button>
+        <button type="button" id="cassandra" class="btn btn-info" ng-click="vm.getCass()">cassandra-clustor</button>
+        <button type="button" id="finance" class="btn btn-primary" ng-click="vm.getHive()">finance-rhive-repurchase</button>
+        <button type="button" id="hadoop" class="btn btn-success" ng-click="vm.getHdoop()">hadoop-family-roadmap</button>
+        <button type="button" id="hive" class="btn btn-warning" ng-click="vm.getHive()">hadoop-hive-intro</button>
+        <button type="button" id="zookeeper" class="btn btn-danger" ng-click="vm.getZkp()">hadoop-zookeeper-intro</button>
+        <button type="button" id="mahout" class="btn btn-default" ng-click="vm.getMaht()">hadoop-mahout-roadmap</button>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="btn-group-vertical">
+                <button type="button" ng-click = 'vm.getRefHostTopn();' class="btn btn-success">dw_pvs_refhost_topn_h</button>
+                <button ng-click='vm.getDistinctIp()' type="button" class="btn btn-info">dw_user_dstc_ip_h</button>
+            </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div id='main1' style="width: 600px;height:400px;" ng-hide ='vm.b2'></div>
+            <div id='main' style="width: 600px;height:400px;" ng-hide ='vm.b1'></div>
+        </div>
+    </div>
+</div>
