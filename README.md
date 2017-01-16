@@ -1,6 +1,7 @@
 This project aims to analyze the web log.
 The logger is in the form of 
 :remote-addr - :remote-user [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
+
 So the primary aim of this project is extracting useful information and organize them in structure and display in various graphs so we can get a better idea of our website and the user behaviors. 
 
 Since in reality the data required is tremendous, this project only simulates the real scenario with a simple frontend and backend dedicated to generate the real data.
