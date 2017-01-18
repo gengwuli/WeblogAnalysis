@@ -1,22 +1,5 @@
 #!/bin/bash
 
-#
-# ===========================================================================
-# program name		:     
-# function			:     move files from flume to hdfs for preprocess
-# input parameter	:     running date
-# target path 		:     /data/weblog/preprocess/input
-# source path 		:     /data/flumedata/
-#   author			:     Gengwu
-# date				:	  2017-1-15
-# version			:     v1.0
-# code review		:     
-# changer			:
-# change date		:
-# change reason		:
-# change list		: 
-# ===========================================================================
-
 #set java env
 export JAVA_HOME=/usr/local/jdk1.8.0_101
 export JRE_HOME=${JAVA_HOME}/jre
