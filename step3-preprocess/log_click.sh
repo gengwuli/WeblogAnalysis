@@ -17,17 +17,11 @@ log_pre_output=/data/weblog/preprocess/output
 #点击流pagevies模型预处理程序输出目录
 click_pvout=/data/weblog/preprocess/click_pv_out
 
-
-
 #点击流visit模型预处理程序类名
 click_visit_class="process.ClickStreamVisit"
 
-
-#点击流visit模型预处理程序输入目录，即pagevies模型预处理程序输出目录  $click_pvout
-
 #点击流visit模型预处理程序输出目录
 click_vstout=/data/weblog/preprocess/click_visit_out
-
 
 #获取时间信息
 # day_01=`date -d'-1 day' +%Y-%m-%d`
@@ -35,7 +29,6 @@ day_01=`date +%Y-%m-%d`
 syear=`date --date=$day_01 +%Y`
 smonth=`date --date=$day_01 +%m`
 sday=`date --date=$day_01 +%d`
-
 
 #读取日志文件的目录，判断是否有当日待处理的目录
 files=`hadoop fs -ls $log_pre_output | grep $day_01 | wc -l`
